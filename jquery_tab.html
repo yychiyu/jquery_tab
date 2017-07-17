@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./jquery_tab.js"></script>
+    <style>
+    * {
+    	maring:0;
+    	padding:0;
+    }
+    body {
+    	font-size: 24px;
+    }
+    .tab {
+        width: 600px;
+        height: 200px;
+        background-color:#BCFFC8;
+    }
+    .tab .tab_nav {
+    	height: 80px;
+    	width: 100%;
+    }
+    .tab .tab_nav li {
+    	list-style: none;
+    	float: left;
+    	width: 33.33%;
+    	text-align: center;
+    }
+    .tab_content div {
+    	text-align: center
+    }
+    .current {
+    	background-color: #FF670C;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+    
+        <ul class="tab_nav">
+        
+            <li class="current">html</li>
+        
+            <li>css</li>
+        
+            <li>js</li>
+            </ul>
+    
+        <div class="tab_content">
+        
+            <div style="display:block;">html</div>
+        
+            <div style="display: none">css</div>
+        
+            <div style="display: none">js</div>
+            </div>
+    </div>
+    <script>
+    $(function() {
+        $('.tab').tab();
+    });
+    </script>
+</body>
+</html>
